@@ -26,7 +26,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	//JdbcTemplate 추가
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc' //Spring이 공식적으로 지원하는 경우 버전이 붙지 않음
+	//MyBatis 추가
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0' //Spring이 공식적으로 지원하지 않는 경우 버전이 붙지 않음
 	//H2 DB 추가
 	runtimeOnly 'com.h2database:h2'
 
